@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Year 7 Reading Guide — The Time Machine</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f5f2;
+    color: #1a1a1a;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+  .page { max-width: 780px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; }
+  .subtitle { font-size: 14px; color: #666; margin-bottom: 1.5rem; }
+  .legend { display: flex; gap: 1rem; margin-bottom: 1.25rem; flex-wrap: wrap; }
+  .leg { display: flex; align-items: center; gap: 5px; font-size: 12px; color: #666; }
+  .ldot { width: 10px; height: 10px; border-radius: 2px; }
+  .q-nav { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.25rem; }
+  .q-btn {
+    padding: 5px 11px; border-radius: 8px;
+    border: 0.5px solid #ccc;
+    background: #fff; font-size: 13px; cursor: pointer;
+    color: #666; transition: background 0.12s;
+  }
+  .q-btn:hover { background: #f0f0ee; }
+  .q-btn.active { background: #EEEDFE; border-color: #AFA9EC; color: #3C3489; font-weight: 500; }
+  .q-btn.fn { border-left: 3px solid #1D9E75; }
+  .q-btn.ch { border-left: 3px solid #D85A30; }
+  .q-btn.st { border-left: 3px solid #378ADD; }
+  .card {
+    background: #fff; border: 0.5px solid #ddd;
+    border-radius: 12px; overflow: hidden; margin-bottom: 1rem;
+  }
+  .banner { padding: 0.6rem 1.25rem; font-size: 12px; font-weight: 500; letter-spacing: 0.03em; }
+  .bn-fn { background: #E1F5EE; color: #085041; }
+  .bn-ch { background: #FAECE7; color: #712B13; }
+  .bn-st { background: #E6F1FB; color: #0C447C; }
+  .tabs { display: flex; border-bottom: 0.5px solid #ddd; }
+  .tab {
+    flex: 1; padding: 0.75rem 1rem; font-size: 14px; cursor: pointer;
+    color: #666; background: #f5f5f2; border: none;
+    border-bottom: 2px solid transparent; transition: all 0.15s; text-align: center;
+  }
+  .tab:first-child { border-right: 0.5px solid #ddd; }
+  .tab.on { background: #fff; color: #1a1a1a; font-weight: 500; border-bottom: 2px solid #7F77DD; }
+  .tab-body { padding: 1.25rem; }
+  .section-label {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.06em;
+    color: #888; text-transform: uppercase; margin-bottom: 0.5rem;
+  }
+  .q-box {
+    background: #f5f5f2; border-radius: 8px;
+    padding: 0.875rem 1rem; font-size: 15px; line-height: 1.75;
+    color: #1a1a1a; margin-bottom: 1rem;
+  }
+  .circled {
+    display: inline; border: 2px solid #D85A30;
+    border-radius: 50%; padding: 0 3px 1px;
+    color: #993C1D; font-weight: 500; white-space: nowrap;
+  }
+  .ul {
+    text-decoration: underline; text-decoration-color: #7F77DD;
+    text-decoration-thickness: 2px; font-weight: 500;
+  }
+  .unpack-box {
+    background: #fff; border: 0.5px solid #ccc; border-radius: 8px;
+    padding: 0.75rem 1rem; font-size: 14px; line-height: 1.7;
+    color: #1a1a1a; margin-bottom: 0.5rem;
+  }
+  .tip {
+    background: #FAEEDA; border-radius: 8px;
+    padding: 0.65rem 0.875rem; font-size: 13px;
+    line-height: 1.6; color: #633806; margin-top: 0.5rem;
+  }
+  .tip b { color: #412402; }
+  .extract {
+    background: #f5f5f2; border-left: 3px solid #7F77DD;
+    border-radius: 0 8px 8px 0; padding: 0.875rem 1rem;
+    font-size: 14px; line-height: 1.9; color: #1a1a1a; font-style: italic;
+  }
+  .hl {
+    background: #EEEDFE; color: #26215C;
+    border-bottom: 2px solid #7F77DD;
+    padding: 1px 2px; font-style: normal; font-weight: 500;
+  }
+  .reasoning {
+    background: #fff; border: 0.5px solid #ccc; border-radius: 8px;
+    padding: 0.875rem 1rem; font-size: 14px; line-height: 1.75;
+    color: #1a1a1a; margin-bottom: 0.75rem;
+  }
+  .reasoning p { margin-bottom: 0.5rem; }
+  .reasoning p:last-child { margin-bottom: 0; }
+  .ans-box {
+    background: #E1F5EE; border-radius: 8px;
+    padding: 0.75rem 1rem; font-size: 14px;
+    line-height: 1.7; color: #04342C;
+  }
+  .ans-box b { color: #085041; }
+  .divider { height: 0.5px; background: #ddd; margin: 1rem 0; }
+  .mbadge {
+    display: inline-block; background: #FAEEDA; color: #633806;
+    border-radius: 8px; padding: 2px 9px;
+    font-size: 12px; font-weight: 500; margin-left: 6px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Year 7 English — Reading Guide</h1>
+  <p class="subtitle">The Time Machine by H.G. Wells &nbsp;|&nbsp; Paper 2 Fiction Reading</p>
+  <div class="legend">
+    <div class="leg"><div class="ldot" style="background:#1D9E75;"></div>Foundation</div>
+    <div class="leg"><div class="ldot" style="background:#378ADD;"></div>Standard</div>
+    <div class="leg"><div class="ldot" style="background:#D85A30;"></div>Challenge</div>
+  </div>
+  <div class="q-nav" id="qnav"></div>
+  <div id="qcontent"></div>
+</div>
+
+<script>
+const QS = [
+  {
+    type:'fn', marks:'1 mark',
+    q:`Look at lines 1–8.<br><span class="circled">Find</span> and <span class="circled">copy</span> <span class="ul">one word</span> from these lines that tells us the Time Traveller <span class="ul">became very wet</span>.`,
+    unpack:`Question words <b>(circled in red):</b> Find and copy — use the exact word from the text, don't change it!<br>Focus <b>(underlined in purple):</b> one word · became very wet`,
+    tip:`<b>How many answers?</b> Just ONE word. Don't write a whole sentence.`,
+    extractClean:`I had scarcely time to think before the darkness gave way to colour, and I found myself standing on short turf in bright sunlight, with a thunderous clap of thunder in my ears and the wind blowing cold upon my face. I felt a tug at my coat from behind and, turning, I saw that I had arrived at this time in the midst of a hailstorm. The hailstones pelted my back, crashing on the great bronze machine and splashing about me. In a moment I was soaked to the skin.`,
+    extractAns:`I had scarcely time to think before the darkness gave way to colour, and I found myself standing on short turf in bright sunlight, with a thunderous clap of thunder in my ears and the wind blowing cold upon my face. I felt a tug at my coat from behind and, turning, I saw that I had arrived at this time in the midst of a hailstorm. The hailstones pelted my back, crashing on the great bronze machine and splashing about me. In a moment I was <span class="hl">soaked</span> to the skin.`,
+    reasoning:`<p>The question asks which word tells us he <b>became very wet</b>.</p><p><b>"Soaked"</b> means completely wet through — like when you get caught in heavy rain and your clothes are dripping. "Soaked to the skin" means the water went right through every layer of clothing to his body.</p><p>Words like <b>"cold"</b> or <b>"splashing"</b> are nearby but wrong — "cold" is about temperature, "splashing" describes what the hailstones did, not how wet he got.</p>`,
+    answer:`<b>Write:</b> soaked &nbsp;<i>(or: soaked to the skin)</i>`
+  },
+  {
+    type:'fn', marks:'2 marks',
+    q:`Look at lines 10–17.<br><span class="circled">Tick</span> <span class="ul">two things</span> the Time Traveller <span class="ul">notices about the sky</span>.`,
+    unpack:`Question word <b>(circled):</b> Tick — put a tick next to the correct options.<br>Focus <b>(underlined):</b> two things · notices about the sky`,
+    tip:`<b>How many answers?</b> Exactly TWO ticks — one mark each. If you tick three, you lose marks!`,
+    extractClean:`The sky was no longer blue. North-eastward it grew very clear and brilliant, but to the south-east it was inky black. There was an odd twinkling that I could not quite account for across that part of the sky. And in the great swathe of the south it was dull and reddish, as if some vast conflagration were smouldering there. Every instant the shapes of the white snowflakes and the hailstones were visible against the black sky to the south-east.`,
+    extractAns:`The sky was no longer blue. <span class="hl">North-eastward it grew very clear and brilliant</span>, but <span class="hl">to the south-east it was inky black</span>. There was an odd twinkling that I could not quite account for across that part of the sky. And in the great swathe of the south it was dull and reddish, as if some vast conflagration were smouldering there. Every instant the shapes of the white snowflakes and the hailstones were visible against the black sky to the south-east.`,
+    reasoning:`<p><b>"To the north-east it was clear and brilliant" ✓</b> — The text says exactly: "North-eastward it grew very clear and brilliant."</p><p><b>"To the south-east it was inky black" ✓</b> — The text says exactly: "to the south-east it was inky black."</p><p><b>Wrong answers:</b> "Bright blue in every direction" is a trap — the text says the sky was "no longer blue." Clouds and a full moon are never mentioned anywhere in these lines.</p>`,
+    answer:`<b>Tick:</b> "To the north-east it was clear and brilliant" AND "To the south-east it was inky black"`
+  },
+  {
+    type:'st', marks:'4 marks',
+    q:`Look at lines 19–27.<br><span class="circled">Give</span> <span class="ul">two things</span> the Time Traveller sees that make this world <span class="ul">seem strange and unsettling</span>. <span class="circled">Use evidence</span> from the text to support each answer.`,
+    unpack:`Question words <b>(circled):</b> Give · Use evidence<br>Focus <b>(underlined):</b> two things · strange and unsettling`,
+    tip:`<b>4 marks = 4 parts.</b> Thing 1 + evidence, then Thing 2 + evidence. Think: Point → Evidence, Point → Evidence.`,
+    extractClean:`I looked about me to see if there were any signs of animal life. It was some time before I saw anything at all. The landscape for a long way around me was flat and bare. Then I noticed some birds flying rapidly in an unusual manner — not hovering, not fluttering, but darting and wheeling with incredible swiftness. And then I saw a queer thing — a creature running, and running very fast. It was not quite like any animal I had seen before. If anything, it reminded me vaguely of a monstrous crab — but that may have been my panic. And then my attention was arrested by a structure, white and shining, further up the hill.`,
+    extractAns:`I looked about me to see if there were any signs of animal life. It was some time before I saw anything at all. The landscape for a long way around me was flat and bare. Then I noticed some <span class="hl">birds flying rapidly in an unusual manner — not hovering, not fluttering, but darting and wheeling with incredible swiftness</span>. And then I saw a queer thing — <span class="hl">a creature running, and running very fast. It was not quite like any animal I had seen before. If anything, it reminded me vaguely of a monstrous crab</span> — but that may have been my panic. And then my attention was arrested by <span class="hl">a structure, white and shining, further up the hill</span>.`,
+    reasoning:`<p><b>Option A — The weird creature:</b> He sees an animal he has never seen before, compared to "a monstrous crab." Crabs don't run on land — this tells us the future has creatures that never existed in his time. The word "monstrous" also tells us it is big and frightening.</p><p><b>Option B — The birds:</b> Normal birds hover and flutter, but these "dart and wheel with incredible swiftness." The word "incredible" means almost impossible to believe — their movement is deeply wrong and unnatural.</p><p><b>Option C — The ruined building:</b> A massive white structure "greatly weathered" with part of its front fallen away. A ruin this enormous suggests something terrible happened to this civilisation long ago.</p><p>Any two of these, each with a supporting quote, earns full marks.</p>`,
+    answer:`<b>First thing:</b> He sees a strange creature unlike anything he has ever seen.<br><b>Evidence:</b> "not quite like any animal I had seen before" / "a monstrous crab"<br><br><b>Second thing:</b> He sees birds flying in a deeply unusual way.<br><b>Evidence:</b> "darting and wheeling with incredible swiftness"`
+  },
+  {
+    type:'st', marks:'2 marks',
+    q:`Look at lines 29–36.<br><span class="circled">How</span> does the writer <span class="ul">make the great building seem both impressive and unsettling</span>? <span class="circled">Write about</span> <span class="ul">two things</span> the writer does.`,
+    unpack:`Question words <b>(circled):</b> How · Write about — don't just describe what the building looks like; explain the writer's choices.<br>Focus <b>(underlined):</b> impressive AND unsettling · two things the writer does`,
+    tip:`<b>Key idea:</b> Think about techniques — size, word choices, personification, the character's feelings.`,
+    extractClean:`It was a large structure, greater than any building I had seen before, and it seemed to be built of a glistening white stone, greatly weathered. Part of the front had fallen away, and a long trailing stem of ivy had grown across the great hole it had made. It was very large indeed — I should have needed a quarter of an hour to walk round it. I looked up at the enormous shape, the massive shoulders of it looming over me, and its blank face, its empty windows. A curious sense of insecurity came over me — a feeling I never quite lost throughout my time there.`,
+    extractAns:`It was a large structure, <span class="hl">greater than any building I had seen before</span>, and it seemed to be built of a glistening white stone, greatly weathered. Part of the front had fallen away, and a long trailing stem of ivy had grown across the great hole it had made. <span class="hl">I should have needed a quarter of an hour to walk round it.</span> I looked up at the enormous shape, <span class="hl">the massive shoulders of it looming over me, and its blank face, its empty windows</span>. <span class="hl">A curious sense of insecurity came over me</span> — a feeling I never quite lost throughout my time there.`,
+    reasoning:`<p><b>Impressive — size:</b> "Greater than any building I had seen before" and "a quarter of an hour to walk round it" both describe an almost unimaginable scale. These comparisons help us feel just how enormous the structure is.</p><p><b>Unsettling — personification:</b> Wells gives the building human body parts: "massive shoulders looming over me" and "blank face, its empty windows." A building with a face and shoulders feels alive and threatening, as though it is watching him.</p><p><b>Unsettling — the narrator's feelings:</b> "A curious sense of insecurity came over me — a feeling I never quite lost." Sharing this emotion directly draws the reader into his unease.</p>`,
+    answer:`Wells uses personification — "massive shoulders" and "blank face" — making the building feel alive and threatening.<br><br>Wells also uses scale: "greater than any building I had seen before" makes it feel overwhelming and impressive at the same time.`
+  },
+  {
+    type:'st', marks:'2 marks',
+    q:`Look at lines 38–42.<br>The writer says: <i>'Fear drove me on.'</i> (line 40) <span class="circled">What does</span> this short sentence <span class="ul">tell us about how the Time Traveller is feeling</span>?`,
+    unpack:`Question word <b>(circled):</b> What does — explain the meaning and effect of this sentence.<br>Focus <b>(underlined):</b> how the Time Traveller is feeling`,
+    tip:`<b>2 marks = 2 ideas.</b> Give a basic point (1 mark), then push further — what does the word "drove" suggest? (2nd mark)`,
+    extractClean:`I should have sat down to wait for the storm to pass and then gone forward cautiously. Instead I rushed headlong. I was very much afraid. Fear drove me on. I scrambled to the top of a low mound, and saw a number of small figures moving across the further meadow.`,
+    extractAns:`I should have sat down to wait for the storm to pass and then gone forward cautiously. Instead I <span class="hl">rushed headlong</span>. I was very much afraid. <span class="hl">Fear drove me on.</span> I scrambled to the top of a low mound, and saw a number of small figures moving across the further meadow.`,
+    reasoning:`<p><b>The word "drove":</b> We say a car drives forward — it pushes something with force. So "fear drove me on" means fear is the engine pushing him forward. He has no real control — fear is in charge, not him.</p><p><b>The short sentence:</b> Only four words. Short sentences feel sudden and sharp, showing the feeling is powerful and simple — he is not thinking, he is just reacting.</p><p><b>The paradox:</b> Usually fear makes us run away or stop. Here, fear pushes him forward. This is surprising and shows he has completely lost control of his own actions. Exploration, Wells suggests, is not brave — it is instinctive.</p>`,
+    answer:`The short sentence shows fear has taken over and is controlling him. The word "drove" suggests he had no real choice — fear was pushing him forward like an engine. This is surprising because usually fear makes people stop, but here it makes him rush on.`
+  },
+  {
+    type:'fn', marks:'1 mark',
+    q:`Look at lines 44–50.<br><span class="circled">Find</span> and <span class="circled">copy</span> <span class="ul">one phrase</span> that shows the future people <span class="ul">were not frightened</span> by the Time Traveller's arrival.`,
+    unpack:`Question words <b>(circled):</b> Find · copy — use the exact words from the text.<br>Focus <b>(underlined):</b> one phrase · not frightened`,
+    tip:`<b>A phrase = more than one word.</b> Find a group of words that clearly shows they felt calm, not scared.`,
+    extractClean:`These people were uncommonly frail — their limbs slender and slight, their faces hairless, their features childlike and large-eyed. But what struck me most was their absolute serenity. They showed no alarm at my sudden appearance among them. There was no shout, no cry of wonder, no threat. They simply stood, regarding me with large and beautiful eyes, with an expression of untroubled curiosity. I felt as though I had tumbled into a world where all urgency had been forgotten.`,
+    extractAns:`These people were uncommonly frail — their limbs slender and slight, their faces hairless, their features childlike and large-eyed. But what struck me most was their absolute serenity. <span class="hl">They showed no alarm at my sudden appearance among them.</span> <span class="hl">There was no shout, no cry of wonder, no threat.</span> They simply stood, regarding me with large and beautiful eyes, with an expression of <span class="hl">untroubled curiosity</span>. I felt as though I had tumbled into a world where all urgency had been forgotten.`,
+    reasoning:`<p><b>"They showed no alarm at my sudden appearance among them"</b> is the clearest phrase. "Alarm" means fear or panic. "No alarm" means they felt none of it — completely calm even though a stranger appeared from nowhere.</p><p><b>"No shout, no cry of wonder, no threat"</b> also works — the three "no" phrases list every possible frightened reaction and say none of them happened.</p><p><b>"Untroubled curiosity"</b> is another strong option — "untroubled" means undisturbed and peaceful, the opposite of frightened.</p>`,
+    answer:`Any one of:<br>"They showed no alarm at my sudden appearance among them"<br>"no shout, no cry of wonder, no threat"<br>"untroubled curiosity"`
+  },
+  {
+    type:'st', marks:'2 marks',
+    q:`Look at lines 44–50.<br><span class="circled">How</span> does the writer make the future people seem <span class="ul">both fascinating and strange</span>? <span class="circled">Write about</span> the <span class="ul">language the writer uses</span>.`,
+    unpack:`Question words <b>(circled):</b> How · Write about — explain why the writer's word choices create this effect.<br>Focus <b>(underlined):</b> fascinating AND strange · language`,
+    tip:`<b>Both = two sides.</b> Find something that makes them fascinating (beautiful/interesting) AND something that makes them strange (odd/unsettling).`,
+    extractClean:`These people were uncommonly frail — their limbs slender and slight, their faces hairless, their features childlike and large-eyed. But what struck me most was their absolute serenity. They showed no alarm at my sudden appearance among them. There was no shout, no cry of wonder, no threat. They simply stood, regarding me with large and beautiful eyes, with an expression of untroubled curiosity. I felt as though I had tumbled into a world where all urgency had been forgotten.`,
+    extractAns:`These people were <span class="hl">uncommonly frail</span> — their limbs slender and slight, their faces hairless, their features <span class="hl">childlike and large-eyed</span>. But what struck me most was their <span class="hl">absolute serenity</span>. They showed no alarm at my sudden appearance among them. There was no shout, no cry of wonder, no threat. They simply stood, regarding me with <span class="hl">large and beautiful eyes</span>, with an expression of <span class="hl">untroubled curiosity</span>. I felt as though I had tumbled into a world where <span class="hl">all urgency had been forgotten</span>.`,
+    reasoning:`<p><b>Fascinating — "large and beautiful eyes":</b> The word "beautiful" draws us toward them — they sound delicate and lovely, almost like figures from a fairy tale. This makes them attractive and interesting.</p><p><b>Strange — "uncommonly frail":</b> "Uncommonly" means unusually — more than normal. "Frail" means weak and delicate. They are too delicate, in an unsettling way, as though something about being human has been worn away over centuries.</p><p><b>Eerie — "all urgency had been forgotten":</b> Humans are always in a hurry. A world where no one feels urgency feels alien and deeply wrong — something important has gone missing from these people's lives.</p>`,
+    answer:`Wells describes "large and beautiful eyes" which makes them seem fascinating and lovely. However, "uncommonly frail" makes them seem strange — too delicate to feel quite human. The phrase "all urgency had been forgotten" is eerie, suggesting these people have lost something essential about being alive.`
+  },
+  {
+    type:'st', marks:'1 mark',
+    q:`Look at lines 52–58.<br><span class="circled">Why</span> does the writer <span class="ul">compare the watching figures to 'a group of children watching a conjuror'</span> (line 58)? <span class="circled">Tick</span> the best answer.`,
+    unpack:`Question words <b>(circled):</b> Why · Tick — one tick only, the BEST answer.<br>Focus <b>(underlined):</b> the comparison / simile being used`,
+    tip:`<b>A conjuror is a magician.</b> How do children watch a magician? Amazed but not scared — just wide-eyed and curious. Which option matches that feeling?`,
+    extractClean:`One of the figures stepped forward and spoke to me in a soft, sweet voice — a voice absolutely unlike any I had heard before. The syllables were simple, and it seemed as though the language might once have been English, though so changed as to be almost unrecognisable. I shook my head, and the figure, accepting this easily, held out a garland of flowers towards me. I took it. Around me the others watched in perfect stillness, with no more agitation than a group of children watching a conjuror.`,
+    extractAns:`One of the figures stepped forward and spoke to me in a soft, sweet voice — a voice absolutely unlike any I had heard before. The syllables were simple, and it seemed as though the language might once have been English, though so changed as to be almost unrecognisable. I shook my head, and the figure, accepting this easily, held out a garland of flowers towards me. I took it. Around me the others watched in perfect stillness, <span class="hl">with no more agitation than a group of children watching a conjuror</span>.`,
+    reasoning:`<p><b>"To show the figures are actually children"</b> — Wrong. They are described as adult-like people earlier in the text. This is a comparison, not a statement of fact.</p><p><b>"To suggest the figures watch with calm, innocent curiosity" ✓</b> — Correct! Children watching a magician are fascinated but not scared — just wide-eyed and interested. This captures exactly the gentle, harmless wonder the figures show.</p><p><b>"To tell us the Time Traveller is performing a trick"</b> — Wrong. He is not performing anything — he is just standing there.</p><p><b>"To show the figures find him frightening"</b> — Wrong. The whole point of the simile is that they are NOT frightened at all.</p>`,
+    answer:`<b>Tick:</b> "To suggest the figures watch with calm, innocent curiosity."`
+  },
+  {
+    type:'st', marks:'2 marks (1+1)',
+    q:`Look at the whole text.<br>(a) <span class="circled">What</span> is the <span class="ul">main focus of section ONE</span>?<br>(b) In what way does the <span class="ul">focus of section THREE differ</span> from section TWO?`,
+    unpack:`Question word <b>(circled):</b> What<br>Focus <b>(underlined):</b> main focus of section ONE · how THREE differs from TWO`,
+    tip:`<b>Two mini-answers — 1 mark each.</b> For part (b), say what section TWO was about AND what section THREE is about so the difference is clear.`,
+    extractClean:`Section ONE (lines 1–17): The arrival — storm, strange sky, immediate shock of landing in the future.\n\nSection TWO (lines 19–36): The landscape — weird birds, the strange creature, the ruined building — non-human strangeness.\n\nSection THREE (lines 38–58): The people — meeting the future humans, their appearance, their calm, the flowers.`,
+    extractAns:`<b>Section ONE</b> — The <span class="hl">arrival: storm, strange sky, immediate shock</span> of landing in the future.<br><br><b>Section TWO</b> — <span class="hl">The landscape: weird birds, the strange creature, the ruined building</span> — non-human strangeness.<br><br><b>Section THREE</b> — <span class="hl">The people: meeting the future humans</span> — their appearance, their calm, the flowers.`,
+    reasoning:`<p><b>Part (a):</b> Section ONE is all about the shock of arriving — the storm, the strange sky, and his first overwhelming reactions. It is about the immediate moment of landing, not yet about exploring.</p><p><b>Part (b):</b> Section TWO focuses on the landscape and non-human strangeness — creatures, birds, and a ruined building. Section THREE shifts entirely to human contact. Instead of the environment, we now see people for the first time. The focus moves from place to person.</p>`,
+    answer:`<b>(a):</b> The main focus of section ONE is the Time Traveller's arrival — the storm and his first shocked impressions of the future world.<br><br><b>(b):</b> Section TWO focuses on the landscape and strange animals and buildings. Section THREE is different because it focuses on people — the Time Traveller meets the humans of the future for the first time.`
+  },
+  {
+    type:'ch', marks:'4 marks',
+    q:`Look at lines 1–8 and lines 38–42.<br>In both sections, the Time Traveller describes his own <span class="ul">state of mind</span> as well as what he sees. <span class="circled">How</span> does the writer <span class="ul">reveal the Time Traveller's feelings</span>? <span class="circled">Write about</span>:<br>• the <span class="ul">words and phrases</span> used to describe his thoughts<br>• what these <span class="ul">word choices suggest</span> about the experience of exploration`,
+    unpack:`Question words <b>(circled):</b> How · Write about<br>Focus <b>(underlined):</b> state of mind · feelings · words and phrases · what they suggest about exploration`,
+    tip:`<b>4 marks = 2 developed points, one from each section.</b> Use: Quote → explain what it means → say what it suggests about exploration.`,
+    extractClean:`Lines 1–8: "I suppose the next thing was at once the most amazing and confusing experience of my life. I had scarcely time to think before the darkness gave way to colour... I forgot the bleakness of my position."\n\nLines 38–42: "I should have sat down to wait for the storm to pass and then gone forward cautiously. Instead I rushed headlong. I was very much afraid. Fear drove me on."`,
+    extractAns:`Lines 1–8: "I suppose the next thing was <span class="hl">at once the most amazing and confusing</span> experience of my life. <span class="hl">I had scarcely time to think</span> before the darkness gave way to colour... <span class="hl">I forgot the bleakness of my position</span>."<br><br>Lines 38–42: "I <span class="hl">should have sat down</span>... Instead I <span class="hl">rushed headlong</span>. I was very much afraid. <span class="hl">Fear drove me on.</span>"`,
+    reasoning:`<p><b>Point 1 — lines 1–8: "most amazing and confusing"</b> holds two opposites at the same time. Amazing = thrilling excitement. Confusing = panic and overwhelm. This tells us exploration is not one clean feeling — it is both at once. "Scarcely time to think" shows the experience bypassed his brain entirely; he felt it before he could understand it.</p><p><b>Point 2 — lines 38–42: "Fear drove me on"</b> — "drove" (like an engine) shows fear is the force in control, not him. He even admits he "should have" been cautious but could not manage it. This suggests real exploration is not heroic or controlled — it is instinctive and fear-driven, the opposite of how adventure stories usually present it.</p>`,
+    answer:`In section ONE, Wells uses "most amazing and confusing experience" — two opposites together — to show exploration is both thrilling and overwhelming at once. "I had scarcely time to think" suggests the experience was too intense for rational thought.<br><br>In lines 38–42, "Fear drove me on" is powerful: "drove" suggests fear is an engine pushing him forward against his will. He admits he "should have" been cautious — showing exploration is not about courage, but about losing control to instinct.`
+  },
+  {
+    type:'ch', marks:'5 marks',
+    q:`Look at the whole text.<br>At the start, the Time Traveller is <span class="ul">overwhelmed and afraid</span>. By the end, he has <span class="ul">encountered the people of the future</span>. <span class="circled">How</span> does the writer use <span class="ul">language and structure</span> across the whole text to chart the Time Traveller's journey from <span class="ul">confusion to cautious wonder</span>? Write about:<br>• how he reacts in sections ONE and TWO<br>• how the mood shifts in section THREE<br>• specific words or phrases showing how his feelings change`,
+    unpack:`Question word <b>(circled):</b> How<br>Focus <b>(underlined):</b> language AND structure · confusion to cautious wonder · feelings changing across all three sections`,
+    tip:`<b>5 marks = cover ALL THREE sections + language AND structure.</b> Plan first! The journey is: chaos → eerie fear → gentle calm.`,
+    extractClean:`Section ONE: "most amazing and confusing experience" / "I had scarcely time to think" / "soaked to the skin"\n\nSection TWO: "may have been my panic" / "a curious sense of insecurity" / "a feeling I never quite lost"\n\nSection THREE: "absolute serenity" / "untroubled curiosity" / "large and beautiful eyes" / "no more agitation than a group of children watching a conjuror"`,
+    extractAns:`Section ONE — Chaos: "<span class="hl">most amazing and confusing</span>" / "<span class="hl">I had scarcely time to think</span>" / "<span class="hl">soaked to the skin</span>"<br><br>Section TWO — Fear: "<span class="hl">may have been my panic</span>" / "<span class="hl">a curious sense of insecurity</span>" / "<span class="hl">a feeling I never quite lost</span>"<br><br>Section THREE — Cautious wonder: "<span class="hl">absolute serenity</span>" / "<span class="hl">untroubled curiosity</span>" / "<span class="hl">large and beautiful eyes</span>" / "<span class="hl">no more agitation than a group of children watching a conjuror</span>"`,
+    reasoning:`<p><b>Language shift:</b> Section ONE uses violent, physical words — "thunderous," "pelted," "crashing," "soaked." Section THREE uses soft, gentle words — "soft, sweet voice," "perfect stillness," "garland of flowers." The language itself slows down and softens as the extract progresses.</p><p><b>Structure — the arc:</b> The three sections move deliberately: chaos (weather/nature) → strangeness (landscape/creatures) → human contact. This is a journey from the impersonal world to the personal — from being battered by hailstones to being handed flowers.</p><p><b>Sentence length:</b> In sections ONE and TWO, short sharp sentences ("Fear drove me on.") create panic. By section THREE, sentences grow longer and flow more gently, mirroring the calmer mood.</p><p><b>The ending simile:</b> "no more agitation than a group of children watching a conjuror" closes the extract on a warm, domestic image. Beginning with "thunderous" chaos and ending with children watching a conjuror shows just how far the journey has travelled.</p>`,
+    answer:`<b>Plan to cover:</b><br>1. Section ONE: violent language — "thunderous," "pelted," "confusing" (chaos and shock)<br>2. Section TWO: fear builds — "sense of insecurity" / "panic" — eerie emptiness<br>3. Section THREE: language softens — "absolute serenity" / "soft, sweet voice" / "garland of flowers"<br>4. Structure: deliberate arc — chaos → strange landscape → gentle human encounter<br>5. Ending simile: "children watching a conjuror" — a warm, calm image closes the journey`
+  }
+];
+
+const labels=['Q1','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11'];
+const tClass={fn:'fn',st:'st',ch:'ch'};
+const bClass={fn:'bn-fn',st:'bn-st',ch:'bn-ch'};
+const bText={fn:'Foundation',st:'Standard',ch:'Challenge'};
+
+let cQ=0, cTab='student';
+
+function renderNav(){
+  document.getElementById('qnav').innerHTML=labels.map((l,i)=>`<button class="q-btn ${tClass[QS[i].type]}${i===cQ?' active':''}" onclick="selQ(${i})">${l}</button>`).join('');
+}
+
+function selQ(i){cQ=i;cTab='student';renderNav();renderCard();}
+function selTab(t){cTab=t;renderCard();}
+
+function renderCard(){
+  const q=QS[cQ];
+  const sSt=cTab==='student';
+  document.getElementById('qcontent').innerHTML=`
+<div class="card">
+  <div class="banner ${bClass[q.type]}">${bText[q.type]} — ${q.marks}</div>
+  <div class="tabs">
+    <button class="tab${sSt?' on':''}" onclick="selTab('student')">Question &amp; extract</button>
+    <button class="tab${!sSt?' on':''}" onclick="selTab('teacher')">Answer &amp; explanation</button>
+  </div>
+  <div class="tab-body">${sSt?studentPanel(q):teacherPanel(q)}</div>
+</div>`;
+}
+
+function studentPanel(q){
+  return `
+<div class="section-label">The question</div>
+<div class="q-box">${q.q}<span class="mbadge">[${q.marks}]</span></div>
+<div class="section-label" style="margin-bottom:0.4rem;">How to read this question</div>
+<div class="unpack-box">${q.unpack}</div>
+<div class="tip">${q.tip}</div>
+<div class="divider"></div>
+<div class="section-label">The extract</div>
+<div class="extract">${q.extractClean.replace(/\n\n/g,'<br><br>')}</div>`;
+}
+
+function teacherPanel(q){
+  return `
+<div class="section-label">The question</div>
+<div class="q-box">${q.q}<span class="mbadge">[${q.marks}]</span></div>
+<div class="divider"></div>
+<div class="section-label">Extract with answer highlighted</div>
+<div class="extract">${q.extractAns}</div>
+<div class="divider"></div>
+<div class="section-label">Why this is the answer</div>
+<div class="reasoning">${q.reasoning}</div>
+<div class="section-label">Model answer</div>
+<div class="ans-box">${q.answer}</div>`;
+}
+
+renderNav();
+renderCard();
+</script>
+</body>
+</html>
